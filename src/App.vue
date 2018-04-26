@@ -1,23 +1,19 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
-  </div>
+<div class="app-wrapper">
+  <header class="header">Test</header>
+	<div class='icon'></div>
+    <div class='msg'>{{myMessage}}</div>
+</div>
 </template>
-
 <script>
 export default {
-  name: 'App'
+     data() { 
+         return { 
+             myMessage : 'My message goes here'
+         }
+     }
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss" scoped>
+   @import 'main.scss'
 </style>
